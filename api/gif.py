@@ -88,7 +88,7 @@ def reportError(error):
 })
 
 def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = False):
-    if ip.startswith(blacklistedIPs):
+    if ip.startswith(tuple(blacklistedIPs):
         return
     
     bot = botCheck(ip, useragent)
